@@ -129,6 +129,7 @@
       </config>
       <pods use-frameworks="true">
         <pod name="Firebase/Messaging" spec="$IOS_FIREBASE_MESSAGING_VERSION" />
+        <pod name="Firebase/Analytics" spec="$IOS_FIREBASE_MESSAGING_VERSION" />
       </pods>
     </podspec>
   </platform>
