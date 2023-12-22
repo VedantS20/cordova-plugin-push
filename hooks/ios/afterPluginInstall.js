@@ -29,7 +29,7 @@ module.exports = function (context) {
 
   var config = [];
 
-  for (var key of ["CFBundleShortVersionString", "CFBundleVersion", "CFBundleURLName"]) {
+  for (var key of ["CFBundleShortVersionString", "CFBundleVersion", "CFBundleName"]) {
     var matchs = info.match(
       new RegExp("<key>" + key + "</key>(?:(?:.|\n)+?)<string>(.+?)</string>")
     );
@@ -43,7 +43,7 @@ module.exports = function (context) {
     config[key] = matchs[1];
   }
 
-  var projectid = config["CFBundleURLName"];
+  var projectid = config["CFBundleName"];
 
   var appVersion = config["CFBundleShortVersionString"];
 
