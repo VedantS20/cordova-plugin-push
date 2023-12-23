@@ -473,7 +473,6 @@ module.exports = function (context) {
         appBuild +
         ";\n" +
         "\t\t\t\tDEBUG_INFORMATION_FORMAT = dwarf;\n" +
-        "\t\t\t\t);\n" +
         "\t\t\t\tGCC_C_LANGUAGE_STANDARD = gnu11;\n" +
         "\t\t\t\tGCC_DYNAMIC_NO_PIC = NO;\n" +
         "\t\t\t\tGCC_OPTIMIZATION_LEVEL = 0;\n" +
