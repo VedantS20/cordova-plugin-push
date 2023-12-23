@@ -473,10 +473,6 @@ module.exports = function (context) {
         appBuild +
         ";\n" +
         "\t\t\t\tDEBUG_INFORMATION_FORMAT = dwarf;\n" +
-        "\t\t\t\tDEVELOPMENT_TEAM = 9B6ELYAL5D;\n" +
-        "\t\t\t\tFRAMEWORK_SEARCH_PATHS = (\n" +
-        '\t\t\t\t\t"$(inherited)",\n' +
-        '\t\t\t\t\t"$(PROJECT_DIR)/Pods/OneSignal/iOS_SDK/OneSignalSDK/Framework",\n' +
         "\t\t\t\t);\n" +
         "\t\t\t\tGCC_C_LANGUAGE_STANDARD = gnu11;\n" +
         "\t\t\t\tGCC_DYNAMIC_NO_PIC = NO;\n" +
@@ -531,12 +527,7 @@ module.exports = function (context) {
         appBuild +
         ";\n" +
         '\t\t\t\tDEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";\n' +
-        "\t\t\t\tDEVELOPMENT_TEAM = 9B6ELYAL5D;\n" +
         "\t\t\t\tENABLE_NS_ASSERTIONS = NO;\n" +
-        "\t\t\t\tFRAMEWORK_SEARCH_PATHS = (\n" +
-        '\t\t\t\t\t"$(inherited)",\n' +
-        '\t\t\t\t\t"$(PROJECT_DIR)/Pods/OneSignal/iOS_SDK/OneSignalSDK/Framework",\n' +
-        "\t\t\t\t);\n" +
         "\t\t\t\tGCC_C_LANGUAGE_STANDARD = gnu11;\n" +
         "\t\t\t\tGCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;\n" +
         "\t\t\t\tGCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;\n" +
