@@ -557,24 +557,24 @@ module.exports = function (context) {
         "/* End XCBuildConfiguration section */"
     );
 
-    // // Append XCConfigurationList section
+    // Append XCConfigurationList section
 
-    // console.log(log + "Append XCConfigurationList section");
+    console.log(log + "Append XCConfigurationList section");
 
-    // cnt = cnt.replace(
-    //   "/* End XCConfigurationList section */",
+    cnt = cnt.replace(
+      "/* End XCConfigurationList section */",
 
-    //   '\t\tFFFFFFFFFFFFFFFFFFFFB33D /* Build configuration list for PBXNativeTarget "NotificationServiceExtension" */ = {\n' +
-    //     "\t\t\tisa = XCConfigurationList;\n" +
-    //     "\t\t\tbuildConfigurations = (\n" +
-    //     "\t\t\t\tFFFFFFFFFFFFFFFFFFFF0074 /* Debug */,\n" +
-    //     "\t\t\t\tFFFFFFFFFFFFFFFFFFFFE808 /* Release */,\n" +
-    //     "\t\t\t);\n" +
-    //     "\t\t\tdefaultConfigurationIsVisible = 0;\n" +
-    //     "\t\t\tdefaultConfigurationName = Release;\n" +
-    //     "\t\t};\n" +
-    //     "/* End XCConfigurationList section */"
-    // );
+      '\t\tFFFFFFFFFFFFFFFFFFFFB33D /* Build configuration list for PBXNativeTarget "NotificationServiceExtension" */ = {\n' +
+        "\t\t\tisa = XCConfigurationList;\n" +
+        "\t\t\tbuildConfigurations = (\n" +
+        "\t\t\t\tFFFFFFFFFFFFFFFFFFFF0074 /* Debug */,\n" +
+        "\t\t\t\tFFFFFFFFFFFFFFFFFFFFE808 /* Release */,\n" +
+        "\t\t\t);\n" +
+        "\t\t\tdefaultConfigurationIsVisible = 0;\n" +
+        "\t\t\tdefaultConfigurationName = Release;\n" +
+        "\t\t};\n" +
+        "/* End XCConfigurationList section */"
+    );
 
     fs.writeFileSync(path.join(project, appName + ".xcodeproj/project.pbxproj"), cnt);
 
