@@ -131,7 +131,7 @@
         <pod name="Firebase/Messaging" spec="$IOS_FIREBASE_MESSAGING_VERSION" />
       </pods>
     </podspec>
-    <hook type="before_plugin_add" src="hooks/ios/beforePluginInstall.js" />
+   
     <hook type="after_plugin_add" src="hooks/ios/afterPluginInstall.js" />
 
   </platform>
