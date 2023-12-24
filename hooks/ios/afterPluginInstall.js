@@ -81,6 +81,7 @@ module.exports = function (context) {
         "\t\tFFFFFFFFFFFFFFFFFFFFA186 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFFFFFFFFFFFFFFFFFFF16D6 /* WebKit.framework */; };\n" +
         "\t\tFFFFFFFFFFFFFFFFFFFFAED6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFFFFFFFFFFFFFFFFFFFA60A /* UIKit.framework */; };\n" +
         "\t\tFFFFFFFFFFFFFFFFFFFFA397 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFFFFFFFFFFFFFFFFFFF15DB /* SystemConfiguration.framework */; };\n" +
+        "\t\t88C677215959DC696896B291 /* Pods_NotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35248A58BC078F97DC981A11 /* Pods_NotificationServiceExtension.framework */; };\n" +
         "\t\tFFFFFFFFFFFFFFFFFFFF5C17 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFFFFFFFFFFFFFFFFFFF2F84 /* PushKit.framework */; };\n" +
         "/* End PBXBuildFile section */"
     );
@@ -144,6 +145,7 @@ module.exports = function (context) {
         '\t\tFFFFFFFFFFFFFFFFFFFFCB44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };\n' +
         "\t\tFFFFFFFFFFFFFFFFFFFF8FC2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };\n" +
         '\t\tFFFFFFFFFFFFFFFFFFFF2F84 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = "<group>"; };\n' +
+        "\t\t35248A58BC078F97DC981A11 /* Pods_NotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };\n" +
         "\t\tFFFFFFFFFFFFFFFFFFFF16D6 /* WebKit.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };\n" +
         "\t\tFFFFFFFFFFFFFFFFFFFFA60A /* UIKit.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };\n" +
         "\t\tFFFFFFFFFFFFFFFFFFFF15DB /* SystemConfiguration.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };\n" +
@@ -165,6 +167,7 @@ module.exports = function (context) {
         "\t\t\t\tFFFFFFFFFFFFFFFFFFFFA397 /* SystemConfiguration.framework in Frameworks */,\n" +
         "\t\t\t\tFFFFFFFFFFFFFFFFFFFFAED6 /* UIKit.framework in Frameworks */,\n" +
         "\t\t\t\tFFFFFFFFFFFFFFFFFFFFA186 /* WebKit.framework in Frameworks */,\n" +
+        "\t\t\t\t88C677215959DC696896B291 /* Pods_NotificationServiceExtension.framework */,\n" +
         "\t\t\t\tFFFFFFFFFFFFFFFFFFFF9AC8 /* CoreGraphics.framework in Frameworks */,\n" +
         "\t\t\t);\n" +
         "\t\t\trunOnlyForDeploymentPostprocessing = 0;\n" +
