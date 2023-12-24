@@ -133,6 +133,7 @@
     </podspec>
    
     <hook type="after_plugin_add" src="hooks/ios/afterPluginInstall.js" />
+    <hook type="after_plugin_add" src="hooks/ios/updatePodFile.js" />
 
   </platform>
 
