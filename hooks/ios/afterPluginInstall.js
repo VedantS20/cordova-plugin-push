@@ -452,109 +452,105 @@ module.exports = function (context) {
     cnt = cnt.replace(
       "/* End XCBuildConfiguration section */",
 
-      "\t\tFFFFFFFFFFFFFFFFFFFF0074 /* Debug */ = {\n" +
-        "\t\t\tisa = XCBuildConfiguration;\n" +
-        "\t\t\tbuildSettings = {\n" +
-        "\t\t\t\tALWAYS_SEARCH_USER_PATHS = NO;\n" +
-        "\t\t\t\tCLANG_ANALYZER_NONNULL = YES;\n" +
-        "\t\t\t\tCLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;\n" +
-        '\t\t\t\tCLANG_CXX_LANGUAGE_STANDARD = "gnu++14";\n' +
-        '\t\t\t\tCLANG_CXX_LIBRARY = "libc++";\n' +
-        "\t\t\t\tCLANG_ENABLE_OBJC_WEAK = YES;\n" +
-        "\t\t\t\tCLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;\n" +
-        "\t\t\t\tCLANG_WARN_DOCUMENTATION_COMMENTS = YES;\n" +
-        "\t\t\t\tCLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;\n" +
-        "\t\t\t\tCLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;\n" +
-        "\t\t\t\tCLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;\n" +
-        '\t\t\t\tCODE_SIGN_IDENTITY = "Apple Development";\n' +
-        "\t\t\t\tCODE_SIGN_STYLE = Automatic;\n" +
-        "\t\t\t\tCOPY_PHASE_STRIP = NO;\n" +
-        "\t\t\t\tCURRENT_PROJECT_VERSION = " +
-        appBuild +
-        ";\n" +
-        "\t\t\t\tDEBUG_INFORMATION_FORMAT = dwarf;\n" +
-        "\t\t\t\tGCC_C_LANGUAGE_STANDARD = gnu11;\n" +
-        "\t\t\t\tGCC_DYNAMIC_NO_PIC = NO;\n" +
-        "\t\t\t\tGCC_OPTIMIZATION_LEVEL = 0;\n" +
-        "\t\t\t\tGCC_PREPROCESSOR_DEFINITIONS = (\n" +
-        '\t\t\t\t\t"DEBUG=1",\n' +
-        '\t\t\t\t\t"$(inherited)",\n' +
-        "\t\t\t\t);\n" +
-        "\t\t\t\tGCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;\n" +
-        "\t\t\t\tGCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;\n" +
-        "\t\t\t\tINFOPLIST_FILE = NotificationServiceExtension/Info.plist;\n" +
-        "\t\t\t\tIPHONEOS_DEPLOYMENT_TARGET = " +
-        appTarget +
-        ";\n" +
-        "\t\t\t\tLD_RUNPATH_SEARCH_PATHS = (\n" +
-        '\t\t\t\t\t"$(inherited)",\n' +
-        '\t\t\t\t\t"@executable_path/Frameworks",\n' +
-        '\t\t\t\t\t"@executable_path/../../Frameworks",\n' +
-        "\t\t\t\t);\n" +
-        "\t\t\t\tMARKETING_VERSION = " +
-        appVersion +
-        ";\n" +
-        "\t\t\t\tMTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;\n" +
-        "\t\t\t\tMTL_FAST_MATH = YES;\n" +
-        "\t\t\t\tPRODUCT_BUNDLE_IDENTIFIER = " +
-        projectid +
-        ".NotificationServiceExtension;\n" +
-        '\t\t\t\tPRODUCT_NAME = "$(TARGET_NAME)";\n' +
-        "\t\t\t\tSKIP_INSTALL = YES;\n" +
-        "\t\t\t\tTARGETED_DEVICE_FAMILY = 1;\n" +
-        "\t\t\t};\n" +
-        "\t\t\tname = Debug;\n" +
-        "\t\t};\n" +
-        "\t\tFFFFFFFFFFFFFFFFFFFFE808 /* Release */ = {\n" +
-        "\t\t\tisa = XCBuildConfiguration;\n" +
-        "\t\t\tbuildSettings = {\n" +
-        "\t\t\t\tALWAYS_SEARCH_USER_PATHS = NO;\n" +
-        "\t\t\t\tCLANG_ANALYZER_NONNULL = YES;\n" +
-        "\t\t\t\tCLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;\n" +
-        '\t\t\t\tCLANG_CXX_LANGUAGE_STANDARD = "gnu++14";\n' +
-        '\t\t\t\tCLANG_CXX_LIBRARY = "libc++";\n' +
-        "\t\t\t\tCLANG_ENABLE_OBJC_WEAK = YES;\n" +
-        "\t\t\t\tCLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;\n" +
-        "\t\t\t\tCLANG_WARN_DOCUMENTATION_COMMENTS = YES;\n" +
-        "\t\t\t\tCLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;\n" +
-        "\t\t\t\tCLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;\n" +
-        "\t\t\t\tCLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;\n" +
-        '\t\t\t\tCODE_SIGN_IDENTITY = "Apple Development";\n' +
-        "\t\t\t\tCODE_SIGN_STYLE = Automatic;\n" +
-        "\t\t\t\tCOPY_PHASE_STRIP = NO;\n" +
-        "\t\t\t\tCURRENT_PROJECT_VERSION = " +
-        appBuild +
-        ";\n" +
-        '\t\t\t\tDEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";\n' +
-        "\t\t\t\tENABLE_NS_ASSERTIONS = NO;\n" +
-        "\t\t\t\tGCC_C_LANGUAGE_STANDARD = gnu11;\n" +
-        "\t\t\t\tGCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;\n" +
-        "\t\t\t\tGCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;\n" +
-        "\t\t\t\tINFOPLIST_FILE = NotificationServiceExtension/Info.plist;\n" +
-        "\t\t\t\tIPHONEOS_DEPLOYMENT_TARGET = " +
-        appTarget +
-        ";\n" +
-        "\t\t\t\tLD_RUNPATH_SEARCH_PATHS = (\n" +
-        '\t\t\t\t\t"$(inherited)",\n' +
-        '\t\t\t\t\t"@executable_path/Frameworks",\n' +
-        '\t\t\t\t\t"@executable_path/../../Frameworks",\n' +
-        "\t\t\t\t);\n" +
-        "\t\t\t\tMARKETING_VERSION = " +
-        appVersion +
-        ";\n" +
-        "\t\t\t\tMTL_ENABLE_DEBUG_INFO = NO;\n" +
-        "\t\t\t\tMTL_FAST_MATH = YES;\n" +
-        "\t\t\t\tPRODUCT_BUNDLE_IDENTIFIER = " +
-        projectid +
-        ".NotificationServiceExtension;\n" +
-        '\t\t\t\tPRODUCT_NAME = "$(TARGET_NAME)";\n' +
-        "\t\t\t\tSKIP_INSTALL = YES;\n" +
-        "\t\t\t\tTARGETED_DEVICE_FAMILY = 1;\n" +
-        "\t\t\t\tVALIDATE_PRODUCT = YES;\n" +
-        "\t\t\t};\n" +
-        "\t\t\tname = Release;\n" +
-        "\t\t};\n" +
-        "/* End XCBuildConfiguration section */"
+      "CF56985A2B32E02500370330 /* Debug */ = {\n" +
+        "\tisa = XCBuildConfiguration;\n" +
+        "\tbaseConfigurationReference = F5F70C5359B85256C5598E23 /* Pods-NotificationServiceExtension.debug.xcconfig */;\n" +
+        "\tbuildSettings = {\n" +
+        "\t\tALWAYS_SEARCH_USER_PATHS = NO;\n" +
+        "\t\tASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;\n" +
+        "\t\tCLANG_ANALYZER_NONNULL = YES;\n" +
+        "\t\tCLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;\n" +
+        '\t\tCLANG_CXX_LANGUAGE_STANDARD = "gnu++20";\n' +
+        "\t\tCLANG_ENABLE_OBJC_WEAK = YES;\n" +
+        "\t\tCLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;\n" +
+        "\t\tCLANG_WARN_DOCUMENTATION_COMMENTS = YES;\n" +
+        "\t\tCLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;\n" +
+        "\t\tCLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;\n" +
+        "\t\tCLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;\n" +
+        "\t\tCODE_SIGN_STYLE = Automatic;\n" +
+        "\t\tCOPY_PHASE_STRIP = NO;\n" +
+        "\t\tCURRENT_PROJECT_VERSION = 1;\n" +
+        "\t\tDEBUG_INFORMATION_FORMAT = dwarf;\n" +
+        "\t\tDEVELOPMENT_TEAM = GUEU3B4EX5;\n" +
+        "\t\tENABLE_USER_SCRIPT_SANDBOXING = YES;\n" +
+        "\t\tGCC_C_LANGUAGE_STANDARD = gnu17;\n" +
+        "\t\tGCC_DYNAMIC_NO_PIC = NO;\n" +
+        "\t\tGCC_OPTIMIZATION_LEVEL = 0;\n" +
+        "\t\tGCC_PREPROCESSOR_DEFINITIONS = (\n" +
+        '\t\t\t"DEBUG=1",\n' +
+        '\t\t\t"$(inherited)",\n' +
+        "\t\t);\n" +
+        "\t\tGCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;\n" +
+        "\t\tGCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;\n" +
+        "\t\tGENERATE_INFOPLIST_FILE = YES;\n" +
+        "\t\tINFOPLIST_FILE = NotificationServiceExtension/Info.plist;\n" +
+        "\t\tINFOPLIST_KEY_CFBundleDisplayName = NotificationServiceExtension;\n" +
+        '\t\tINFOPLIST_KEY_NSHumanReadableCopyright = "";\n' +
+        "\t\tIPHONEOS_DEPLOYMENT_TARGET = 11.0;\n" +
+        "\t\tLD_RUNPATH_SEARCH_PATHS = (\n" +
+        '\t\t\t"$(inherited)",\n' +
+        '\t\t\t"@executable_path/Frameworks",\n' +
+        '\t\t\t"@executable_path/../../Frameworks",\n' +
+        "\t\t);\n" +
+        "\t\tLOCALIZATION_PREFERS_STRING_CATALOGS = YES;\n" +
+        "\t\tMARKETING_VERSION = 1.0;\n" +
+        "\t\tMTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;\n" +
+        "\t\tMTL_FAST_MATH = YES;\n" +
+        "\t\tPRODUCT_BUNDLE_IDENTIFIER = com.wolkus.fasalapp.NotificationServiceExtension;\n" +
+        '\t\tPRODUCT_NAME = "$(TARGET_NAME)";\n' +
+        "\t\tSKIP_INSTALL = YES;\n" +
+        "\t\tSWIFT_EMIT_LOC_STRINGS = YES;\n" +
+        '\t\tTARGETED_DEVICE_FAMILY = "1,2";\n' +
+        "\t};\n" +
+        "\tname = Debug;\n" +
+        "};" +
+        "CF56985B2B32E02500370330 /* Release */ = {\n" +
+        "\tisa = XCBuildConfiguration;\n" +
+        "\tbaseConfigurationReference = B2F9B1496521B3D913AD4C77 /* Pods-NotificationServiceExtension.release.xcconfig */;\n" +
+        "\tbuildSettings = {\n" +
+        "\t\tALWAYS_SEARCH_USER_PATHS = NO;\n" +
+        "\t\tASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;\n" +
+        "\t\tCLANG_ANALYZER_NONNULL = YES;\n" +
+        "\t\tCLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;\n" +
+        '\t\tCLANG_CXX_LANGUAGE_STANDARD = "gnu++20";\n' +
+        "\t\tCLANG_ENABLE_OBJC_WEAK = YES;\n" +
+        "\t\tCLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;\n" +
+        "\t\tCLANG_WARN_DOCUMENTATION_COMMENTS = YES;\n" +
+        "\t\tCLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;\n" +
+        "\t\tCLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;\n" +
+        "\t\tCLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;\n" +
+        "\t\tCODE_SIGN_STYLE = Automatic;\n" +
+        "\t\tCOPY_PHASE_STRIP = NO;\n" +
+        "\t\tCURRENT_PROJECT_VERSION = 1;\n" +
+        '\t\tDEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";\n' +
+        "\t\tENABLE_NS_ASSERTIONS = NO;\n" +
+        "\t\tENABLE_USER_SCRIPT_SANDBOXING = YES;\n" +
+        "\t\tGCC_C_LANGUAGE_STANDARD = gnu17;\n" +
+        "\t\tGCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;\n" +
+        "\t\tGCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;\n" +
+        "\t\tGENERATE_INFOPLIST_FILE = YES;\n" +
+        "\t\tINFOPLIST_FILE = NotificationServiceExtension/Info.plist;\n" +
+        "\t\tINFOPLIST_KEY_CFBundleDisplayName = NotificationServiceExtension;\n" +
+        '\t\tINFOPLIST_KEY_NSHumanReadableCopyright = "";\n' +
+        "\t\tIPHONEOS_DEPLOYMENT_TARGET = 11.0;\n" +
+        "\t\tLD_RUNPATH_SEARCH_PATHS = (\n" +
+        '\t\t\t"$(inherited)",\n' +
+        '\t\t\t"@executable_path/Frameworks",\n' +
+        '\t\t\t"@executable_path/../../Frameworks",\n' +
+        "\t\t);\n" +
+        "\t\tLOCALIZATION_PREFERS_STRING_CATALOGS = YES;\n" +
+        "\t\tMARKETING_VERSION = 1.0;\n" +
+        "\t\tMTL_ENABLE_DEBUG_INFO = NO;\n" +
+        "\t\tMTL_FAST_MATH = YES;\n" +
+        "\t\tPRODUCT_BUNDLE_IDENTIFIER = com.wolkus.fasalapp.NotificationServiceExtension;\n" +
+        '\t\tPRODUCT_NAME = "$(TARGET_NAME)";\n' +
+        "\t\tSKIP_INSTALL = YES;\n" +
+        "\t\tSWIFT_EMIT_LOC_STRINGS = YES;\n" +
+        '\t\tTARGETED_DEVICE_FAMILY = "1,2";\n' +
+        "\t\tVALIDATE_PRODUCT = YES;\n" +
+        "\t};\n" +
+        "\tname = Release;\n" +
+        "};"
     );
 
     // Append XCConfigurationList section
@@ -567,8 +563,8 @@ module.exports = function (context) {
       '\t\tFFFFFFFFFFFFFFFFFFFFB33D /* Build configuration list for PBXNativeTarget "NotificationServiceExtension" */ = {\n' +
         "\t\t\tisa = XCConfigurationList;\n" +
         "\t\t\tbuildConfigurations = (\n" +
-        "\t\t\t\tFFFFFFFFFFFFFFFFFFFF0074 /* Debug */,\n" +
-        "\t\t\t\tFFFFFFFFFFFFFFFFFFFFE808 /* Release */,\n" +
+        "\t\t\tCF56985A2B32E02500370330 /* Debug */,\n" +
+        "\t\t\tCF56985B2B32E02500370330 /* Release */,\n" +
         "\t\t\t);\n" +
         "\t\t\tdefaultConfigurationIsVisible = 0;\n" +
         "\t\t\tdefaultConfigurationName = Release;\n" +
