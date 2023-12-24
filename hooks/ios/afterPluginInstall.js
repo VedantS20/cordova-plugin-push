@@ -564,8 +564,8 @@ module.exports = function (context) {
       '\t\tFFFFFFFFFFFFFFFFFFFFB33D /* Build configuration list for PBXNativeTarget "NotificationServiceExtension" */ = {\n' +
         "\t\t\tisa = XCConfigurationList;\n" +
         "\t\t\tbuildConfigurations = (\n" +
-        "\t\t\t\tFFFFFFFFFFFFFFFFFFFF0074 /* Debug */,\n" +
-        "\t\t\t\tFFFFFFFFFFFFFFFFFFFFE808 /* Release */,\n" +
+        "\t\t\tFFFFFFFFFFFFFFFFFFFF0074 /* Debug */,\n" +
+        "\t\t\tFFFFFFFFFFFFFFFFFFFFE808 /* Release */,\n" +
         "\t\t\t);\n" +
         "\t\t\tdefaultConfigurationIsVisible = 0;\n" +
         "\t\t\tdefaultConfigurationName = Release;\n" +
