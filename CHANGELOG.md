@@ -1,5 +1,88 @@
 # Change Log
 
+## 5.0.2
+
+**Fixes:**
+
+fix(android): add missing `import androidx.core.app.ActivityCompat` (#331)
+
+## 5.0.1
+
+**Fixes:**
+
+fix(ios): revert accidental change to category "`callback`" (#328)
+fix(ios): update reset flags placement in `notificationReceived` (#329)
+fix(ios): request new permissions based on ios config changes (#326)
+fix(android): prevent permission dialog appearing when already denied (#325)
+fix(ios): exclude configure if `FIRApp` is already configured (#321)
+fix(ios): reset flags & store message after processing notification received (#319)
+fix(ios): make sure `notificationMessage` is immutable (#317)
+
+**Others:**
+
+chore(*): typings - update comments & iOS `forceShow` option (#327)
+ci: replace lock app with lock-threads workflow
+
+## 5.0.0
+
+**Breaking:**
+
+- chore(android)!: remove before compile hook script (#307)
+- fix(ios)!: duplicate notification presentation on iOS 18.0 (#303)
+- feat(ios)!: move `AppDelegate` logic to `PushPlugin.m` (#300)
+- feat(ios)!: bump `firebase@10.24.0` (#294)
+- feat(ios)!: extract FCM related logic to `PushPluginFCM` (#293)
+- chore(ios)!: remove unused & deprecated code & styling formatting (#291)
+
+**Features:**
+
+- feat(ios): extract settings into `PushPluginSettings` (#292)
+- feat(ios): implement `forceShow` (#276)
+
+**Fixes:**
+
+- fix(android): `getCircleBitmap` not displaying image (#311)
+- fix(*): add `clearNotification` to typescript definitions (#309)
+- fix(ios): on notification event payload & stop background task (#301)
+- fix(ios): run `setApplicationIconBadgeNumber` on main thread (#302)
+- fix(android): clipped notification text and expand arrow (#286)
+- fix(ios): add missing `critical` to typings (#271)
+
+**Others:**
+
+- chore: bump plugin.xml to 5.0.0 (#310)
+- chore: revert back to `AppDelegate` (#306)
+- chore(ios): update all NSLog to include `[PushPlugin]` prefix (#290)
+- doc: update link to iOS payload keys (#312)
+- doc: formatting and including 5.0.0 (#308)
+
+## 4.0.0
+
+**Breaking:**
+
+- feat(android)!: bump platform requirement cordova-android>=12.0.0 (#243)
+- feat!(ios): update Firebase Messaging to ~> 8.1.1 (#152)
+- fix(windows)!: remove deprecated platform (#245)
+
+**Features:**
+
+- feat(android): bump gradle plugin kotlin to 1.7.21 (#246)
+- feat(android): bump GradlePluginGoogleServicesVersion to 4.3.15 (match w/ Cordova-Android@12.x) (#244)
+- feat(android): support targetSdkVersion >= 31 (Android 12) (#185)
+
+**Fixes:**
+
+- fix(ios): callback not called when foreground is true #101 (#102)
+- fix(android): deprecated warning Html.fromHtml (#230)
+- fix(android): Ask for POST_NOTIFICATIONS permission if necessary (#238)
+- fix(android): PushHandlerActivity permissions regression (#183)
+
+**Others:**
+
+- dep: resolve audit with rebuilt package-lock & rebuilt push.js with new packages (#248)
+- dep(npm): bump all devDependencies (#241)
+- ci: bump github action workflow and dependencies (#242)
+
 ## 3.0.1
 
 **Fixes:**
